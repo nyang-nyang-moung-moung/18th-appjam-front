@@ -1,9 +1,10 @@
-package com.example.appjam18
+package com.example.appjam18.Activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.appjam18.R
 
 class SplashActivity : AppCompatActivity() {
 

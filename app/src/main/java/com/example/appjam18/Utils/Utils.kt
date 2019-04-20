@@ -12,10 +12,12 @@ import java.io.File
 object Utils {
 
     var retrofit = Retrofit.Builder()
-        .baseUrl("")
+        .baseUrl("http://52.79.124.19:9000/")
         .client(createOkHttpClient())
         .addConverterFactory(GsonConverterFactory.create())
         .build()
+
+    val service = retrofit.create(Services::class.java)
 
     val MULTIPART_FORM_DATA = "multipart/form-data"
 

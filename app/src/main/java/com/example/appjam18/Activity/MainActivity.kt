@@ -1,7 +1,8 @@
-package com.example.appjam18
+package com.example.appjam18.Activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.appjam18.R
 
 class  MainActivity : AppCompatActivity() {
 
