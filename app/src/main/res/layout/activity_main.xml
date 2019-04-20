@@ -8,8 +8,11 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/Main_view_image" />
+        android:layout_height="270dp"
+        android:background="@drawable/Main_view_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:id="@+id/mainNameView"
@@ -22,17 +25,23 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="22dp"
+            android:layout_marginTop="20dp"
             android:text="이민혁님,\n안녕하세요 !"
             android:textColor="@android:color/white"
-            android:textSize="11pt"
+            android:textSize="10pt"
             android:textStyle="bold" />
     </LinearLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:backgroundTint="#03dac6"
-        android:src="@drawable/" />
+        android:src="@drawable/Camera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:layout_width="match_parent"
@@ -48,26 +57,28 @@
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
-            android:id="@+id/mainIdea"
+        <ImageView
+            android:id="@+id/home"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="35sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="아이디어"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:src="@drawable/ic_home_black_24dp" />
 
-        <TextView
-            android:id="@+id/mainProject"
+        <ImageView
+            android:id="@+id/myPage"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="35sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="프로젝트"
-            android:textColor="@android:color/black"
-            android:textSize="15sp" />
+            android:src="@drawable/ic_person_black_24dp" />
 
     </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
