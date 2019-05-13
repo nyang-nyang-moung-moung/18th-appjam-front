@@ -4,7 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.appjam18.Activity.LoginActivity
 import com.example.appjam18.Activity.MainActivity
 
 class dummy : AppCompatActivity() {

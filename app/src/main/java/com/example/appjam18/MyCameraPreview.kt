@@ -1,19 +1,11 @@
 package com.example.appjam18
 
-import android.R.attr.orientation
-import android.hardware.Camera.CameraInfo
-import android.hardware.Camera.CameraInfo.CAMERA_FACING_FRONT
-import android.view.Surface.ROTATION_270
-import android.view.Surface.ROTATION_180
-import android.view.Surface.ROTATION_90
-import android.view.Surface.ROTATION_0
-import android.view.SurfaceHolder
-import android.hardware.Camera.getCameraInfo
 import android.app.Activity
 import android.content.Context
 import android.hardware.Camera
 import android.util.Log
 import android.view.Surface
+import android.view.SurfaceHolder
 import android.view.SurfaceView
 import java.io.IOException
 

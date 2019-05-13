@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebViewClient
 import com.example.appjam18.R
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_more.*
-import kotlinx.android.synthetic.main.activity_my_page.*
 import org.jetbrains.anko.startActivity
 
 class MoreActivity : AppCompatActivity() {
