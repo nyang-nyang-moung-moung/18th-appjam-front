@@ -16,6 +16,6 @@ class dummy : AppCompatActivity() {
         hander.postDelayed({
             startActivity(Intent(this@dummy, MainActivity::class.java))
             finish()
-        },3500)
+        }, 3500)
     }
 }

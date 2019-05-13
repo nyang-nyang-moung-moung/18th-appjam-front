@@ -18,9 +18,10 @@ class SplashActivity : AppCompatActivity() {
         hander.postDelayed({
             startActivity(Intent(this@SplashActivity, LoginActivity::class.java))
             finish()
-        },3500)
+        }, 3500)
     }
-    fun lottie(){
+
+    fun lottie() {
         background.playAnimation()
     }
 }

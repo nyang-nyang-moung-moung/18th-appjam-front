@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
 
         fab.setOnClickListener {
-//            selectCamera()s
+            //            selectCamera()s
             startActivity<cameraActivity>()
         }
 
@@ -51,12 +51,12 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         var picture = image(data)
         val res: Call<Result_image> = Utils.service.picture(picture)
-        res.enqueue(object : Callback<Result_image>{
+        res.enqueue(object : Callback<Result_image> {
             override fun onFailure(call: Call<Result_image>, t: Throwable) {
             }
 
             override fun onResponse(call: Call<Result_image>, response: Response<Result_image>) {
-                when(response.code()){
+                when (response.code()) {
                     200 -> {
                         Toast.makeText(applicationContext, "전송성공", Toast.LENGTH_LONG).show()
                         startActivity<dummy>()
@@ -115,7 +115,6 @@ class MainActivity : AppCompatActivity() {
         val alertDialog = builder.create()
         alertDialog.show()
     }
-
 
 
 }

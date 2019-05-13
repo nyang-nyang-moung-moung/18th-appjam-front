@@ -6,9 +6,9 @@ import java.util.ArrayList
 
 class Onboard : AppCompatActivity() {
 
-    private lateinit var arrayList : ArrayList<Int>
+    private lateinit var arrayList: ArrayList<Int>
 
-    lateinit var dummy : ArrayList<Int>
+    lateinit var dummy: ArrayList<Int>
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
